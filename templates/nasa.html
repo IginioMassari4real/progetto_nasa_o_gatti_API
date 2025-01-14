@@ -3,13 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Picture of the Day</title>
+    <style>
+        /* Stile per il corpo */
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Stile per il titolo principale */
+        h1 {
+            font-size: 2.8em;
+            margin-top: 40px;
+            color: #f5f5f5;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Stile per il sottotitolo */
+        h2 {
+            font-size: 1.8em;
+            color: #dcdde1;
+            margin-bottom: 15px;
+        }
+
+        /* Stile per il paragrafo della descrizione */
+        p {
+            font-size: 1.2em;
+            color: #ecf0f1;
+            padding: 0 10%;
+            line-height: 1.6;
+            margin: 20px auto;
+        }
+
+        /* Stile per l'immagine */
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stile per il link alla home */
+        a {
+            color: #3498db;
+            font-size: 1.1em;
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1abc9c;
+        }
+    </style>
 </head>
-<body style="text-align: center; font-family: Arial, sans-serif;">
+<body>
     <h1>Astronomy Picture of the Day</h1>
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
-    <img src="{{ image_url }}" alt="Immagine NASA" style="max-width: 80%; height: auto; margin: 20px auto;" />
+    <img src="{{ image_url }}" alt="Immagine NASA" />
     <br>
-    <a href="/" style="margin-top: 20px; display: block;">Torna alla Home</a>
+    <button onclick="location.href='/'">Torna alla Home</button>
 </body>
 </html>

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">    
-    <style>
-        /* Stili generali */
+/* Stili generali */
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -64,13 +56,3 @@ button:active {
         font-size: 16px;
     }
 }
-    </style>
-</head>
-<body>
-    <h1>Benvenuto alla Home!</h1>
-    <p>Scegli una delle opzioni:</p>
-
-    <button onclick="location.href='/cat'">Vai a Cat</button>
-    <button onclick="location.href='/nasa'">Vai a NASA</button>
-</body>
-</html>

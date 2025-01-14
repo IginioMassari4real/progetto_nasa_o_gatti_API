@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatto Funny sui Gatti</title>
+    <style>
+        /* Stile per il corpo */
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Stile per il titolo */
+        h1 {
+            font-size: 2.5em;
+            margin-top: 50px;
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stile per il paragrafo del fatto */
+        p {
+            font-size: 1.25em;
+            margin: 20px;
+            color: #34495e;
+            background: #ecf0f1;
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stile per il pulsante */
+        button {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stile per il link alla home */
+        a {
+            margin-top: 20px;
+            display: block;
+            color: #2980b9;
+            font-size: 1em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1f618d;
+        }
+    </style>
 </head>
-<body style="text-align: center; font-family: Arial, sans-serif;">
+<body>
     <h1>Fatto funny sui gatti</h1>
-    <p style="font-size: 20px; margin: 20px;">{{ fact }}</p>
+    <p>{{ fact }}</p>
     <form action="/cat/change" method="post">
-    <button type="submit" style="padding: 10px 20px; font-size: 16px;">Cambia fatto</button>
+        <button type="submit" style="font-size: 24px; padding: 20px 50px; border-radius: 10px;">Cambia fatto</button>
     </form>
-    <a href="/" style="margin-top: 20px; display: block;">Torna alla Home</a>
+    <button onclick="location.href='/'">Torna alla Home</button>
 </body>
 </html>

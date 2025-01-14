@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 NASA_API_KEY = 'nr4279aS2Aj3f9M3lJrOyZDLAddRG0hYBuUyPHmM' #api kei della nasa
 
+@app.route('/')
+def home():
+    return render_template('home.html')
+
 @app.route('/nasa')
 def nasa_home():
     response = requests.get(f'https://api.nasa.gov/planetary/apod?api_key={NASA_API_KEY}')
